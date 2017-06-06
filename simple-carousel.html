@@ -6,7 +6,10 @@
 `simple-carousel`
 Simple carousel component for Polymer 1.0
 
-[View in Github](https://github.com/franjsc/simple-carousel)
+Modifications: Adrian Haasler <dev@adrianhaasler.com>
+- Notify changes in selected property.
+
+[View in Github](https://github.com/ahaasler/simple-carousel)
 @demo demo/index.html
 -->
 
@@ -105,6 +108,7 @@ Simple carousel component for Polymer 1.0
          */
         selected: {
           type: Object,
+          notify: true,
           observer: '_selectedChanged'
         },
         /**
